@@ -274,7 +274,7 @@
 .owl-carousel .owl-nav .owl-prev {
     height: 50px;
     width: 50px;
-    border: 1px solid black !important;
+    border: 3px solid black !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,6 +282,11 @@
     font-size: 20px !important;
     border-radius: 50px !important;
 
+}
+.solutions-made-for-industry-carousel .owl-nav .owl-next:hover,
+.owl-carousel .owl-nav .owl-prev:hover{
+border: 3px solid orange !important;
+color: orange !important;
 }
 
 /* desk-booking-section */
@@ -307,6 +312,18 @@
         font-size: 60px;
 
     }
+    #try-hybrid .try-hybrid-list h5 {
+    font-size: 45px;
+}
+#try-hybrid .try-hybrid-list ul li {
+    font-size: 15px;
+    
+}
+#try-hybrid .try-hybrid-list ul li::before {
+    
+    width: 20px;
+    height: 20px;
+}
 }
 
 
