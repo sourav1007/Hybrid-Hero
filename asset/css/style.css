@@ -1,34 +1,57 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .yourcomp .cont-sec {
     max-width: 100%;
-   
-}
-*{
-  font-family: "Inter", sans-serif;
+
 }
 
-#nav .container{
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
     max-width: 1650px;
 }
 
-#try-hybrid .try-hybrid-list h5{
-    color: black;
+#nav .container {
+    max-width: 1650px;
+}
+
+.yourcomp .cont-sec h1 {
+    padding: 0;
+    margin-bottom: 33.75px;
+
+}
+
+.yourcomp .cont-sec .simple-int {
+    margin-bottom: 33.75px;
+}
+
+.yourcomp .cont-sec p {
+    margin-bottom: 56.25px;
+}
+
+#try-hybrid .try-hybrid-list h5 {
+    color: #203864;
     font-size: 55px;
 }
-#try-hybrid .try-hybrid-list h5 span{
+
+#try-hybrid .try-hybrid-list h5 span {
     color: #eb9544;
 }
-#try-hybrid .try-hybrid-list ul{
+
+#try-hybrid .try-hybrid-list ul {
     padding-left: 35px;
 }
-#try-hybrid .try-hybrid-list ul li{ 
+
+#try-hybrid .try-hybrid-list ul li {
     margin-bottom: 20px;
     font-size: 20px;
     list-style: none;
     display: flex;
     position: relative;
 }
+
 #try-hybrid .try-hybrid-list ul li::before {
     content: "";
     padding: 10px;
@@ -47,110 +70,188 @@
 
 /* Default - full width below 576px */
 
- .trusted-marquee-wrapper {
-  overflow: hidden;
-  width: 100%;
-  padding: 10px 0;
-  position: relative;
+.trusted-marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
 }
 
 .trusted-marquee {
-  display: flex;
-  width: fit-content;
-  will-change: transform;
+    display: flex;
+    width: fit-content;
+    will-change: transform;
 }
 
 .trusted-marquee .item {
-  min-width: 300px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10px;
-  margin: 0 50px;
+    min-width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 50px;
 }
 
 .trusted-marquee .item img {
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 
 /* Animation classes */
 .scroll-left {
-  animation: scrollLeft 30s linear infinite;
+    animation: scrollLeft 30s linear infinite;
 }
+
 .scroll-right {
-  animation: scrollRight 30s linear infinite;
+    animation: scrollRight 30s linear infinite;
 }
 
 
-    /* Duplicate the marquee items to create seamless loop */
-    .trusted-marquee-wrapper .trusted-marquee  .marquee-content {
-      display: flex;
-    }
+/* Duplicate the marquee items to create seamless loop */
+.trusted-marquee-wrapper .trusted-marquee .marquee-content {
+    display: flex;
+}
+
 /* solutions-made-for-industry-section */
 
-.solutions-made-for-industry-section{
+.solutions-made-for-industry-section {
     padding: 60px 0px;
 }
-.solutions-made-for-industry h2{
+
+.solutions-made-for-industry h2 {
     color: black;
     font-size: 55px;
     padding: 45px 0;
     max-width: 621px;
 }
-.solutions-made-for-industry h2 span{
+
+.solutions-made-for-industry h2 span {
     color: #eb9544;
 }
 
+.solutions-made-for-card-description {
+    display: none;
+
+}
+
+.solutions-made-for-card-description .solutions-made-for-card-description-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.solutions-made-for-card-description .solutions-list li {
+    position: relative;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.solutions-made-for-card-description .solutions-list li::before {
+    content: "";
+    padding: 10px;
+    position: absolute;
+    left: -35px;
+    top: 3px;
+    background-image: url("../images/checkmark-theme.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.list-1 li::before {
+    background-color: #a78226;
+}
+
+/* Cyan */
+.list-2 li::before {
+    background-color: #be638f;
+}
+
+/* Light Orange */
+.list-3 li::before {
+    background-color: #5eadcf;
+}
+
+/* Lavender */
+.list-4 li::before {
+    background-color: #4cb7b0;
+}
+
+/* Mint Green */
+.list-5 li::before {
+    background-color: #45976a;
+}
+
+/* Pale Yellow */
+.list-6 li::before {
+    background-color: #c6765b;
+}
 
 
- .solutions-made-for-industry-carousel .item .solutions-made-for-card{
+.solutions-made-for-card:hover .solutions-made-for-card-description {
+    display: block;
+}
+
+.solutions-made-for-card:hover .card-title {
+    display: none;
+    color: red;
+}
+
+.solutions-made-for-card:hover .icon {
+    display: none;
+}
+
+
+.solutions-made-for-industry-carousel .item .solutions-made-for-card {
     height: 347px;
     padding: 30.6px;
     border-radius: 20px;
 }
+
 .solutions-made-for-industry-carousel .item-1 .solutions-made-for-card {
-    color: #B86300
-;
-background-image: linear-gradient(180deg, #FFF6DD 0%, #ffe194 100%)
-;}
+    color: #B86300;
+    background-image: linear-gradient(180deg, #FFF6DD 0%, #ffe194 100%);
+}
+
 .solutions-made-for-industry-carousel .item-2 .solutions-made-for-card {
     color: #850442;
-    background-image: linear-gradient(180deg, #FFF0F4 0%, #ECA7C8 100%)
-;
+    background-image: linear-gradient(180deg, #FFF0F4 0%, #ECA7C8 100%);
 }
+
 .solutions-made-for-industry-carousel .item-3 .solutions-made-for-card {
     color: #0062BD;
-    background-image: linear-gradient(180deg, #E0F6FF 0%, #96DFFF 100%)
-
-;
+    background-image: linear-gradient(180deg, #E0F6FF 0%, #96DFFF 100%);
 }
+
 .solutions-made-for-industry-carousel .item-4 .solutions-made-for-card {
     color: #006B6B;
-    background-image: linear-gradient(180deg, #D2FFFA 0%, #6DEDE5 100%)
-;
+    background-image: linear-gradient(180deg, #D2FFFA 0%, #6DEDE5 100%);
 }
+
 .solutions-made-for-industry-carousel .item-5 .solutions-made-for-card {
-color: #004F32;
-background-image: linear-gradient(180deg, #E6F9ED 0%, #8CEAB7 100%)
-;}
+    color: #004F32;
+    background-image: linear-gradient(180deg, #E6F9ED 0%, #8CEAB7 100%);
+}
+
 .solutions-made-for-industry-carousel .item-6 .solutions-made-for-card {
-color: #C53506;
-background-image: linear-gradient(180deg, #FFEEE9 0%, #FFBDA7 100%)
-;
+    color: #C53506;
+    background-image: linear-gradient(180deg, #FFEEE9 0%, #FFBDA7 100%);
 }
 
 
 
- .solutions-made-for-industry-carousel .item .solutions-made-for-card .icon{
+.solutions-made-for-industry-carousel .item .solutions-made-for-card .icon {
     margin-bottom: 20px;
 
 }
-.solutions-made-for-industry-carousel .item .solutions-made-for-card .card-title{
+
+.solutions-made-for-industry-carousel .item .solutions-made-for-card .card-title {
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -158,15 +259,17 @@ background-image: linear-gradient(180deg, #FFEEE9 0%, #FFBDA7 100%)
 }
 
 
- .solutions-made-for-industry-carousel .owl-nav {
+.solutions-made-for-industry-carousel .owl-nav {
     position: absolute;
     top: -40%;
     right: 5%;
     display: block;
     display: flex;
-    gap:8px;
+    gap: 8px;
 }
- .solutions-made-for-industry-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+
+.solutions-made-for-industry-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
     height: 50px;
     width: 50px;
     border: 1px solid black !important;
@@ -180,139 +283,158 @@ background-image: linear-gradient(180deg, #FFEEE9 0%, #FFBDA7 100%)
 }
 
 /* desk-booking-section */
-.desk-booking-section{
+.desk-booking-section {
     padding: 60px 0;
 }
 
-@media(max-width:1440px){
-    .yourcomp .cont-sec h1 {
-   
-    font-size: 60px;
-    
+@media (max-width:1600px) {
+    .container {
+        max-width: 1370px;
+    }
+
+
 }
+
+@media(max-width:1440px) {
+    .container {
+        max-width: 1160px;
+    }
+
+    .yourcomp .cont-sec h1 {
+
+        font-size: 60px;
+
+    }
 }
 
 
 /* Medium devices (up to 1024px) */
 @media (max-width: 1024px) {
-  .container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .solutions-made-for-industry-carousel .item .solutions-made-for-card {
-    
-    padding: 15.6px;
-}
-.solutions-made-for-industry-carousel .item .solutions-made-for-card .card-title {
-    font-size: 20px;
-   
-}
-.solutions-made-for-industry h2 {
-    font-size: 40px;
-    padding: 0 0 30px 0;
-}
-.yourcomp .cont-sec h1 {
-    
-    font-size: 35px;
-   
-}
-.yourcomp .btsec .cmnbtn-out {
-    margin-left: 5px;
-}
-.yourcomp .btsec {
-    display: flex;
-    font-size: 11px;
-}
-  .yourcomp {
-    padding: 10px; /* Adjust padding as needed */
-  }
 
-  .yourcomp .cont-sec {
-    padding-top: 20px; /* Modify spacing for better layout on tablets */
-  }
+    .solutions-made-for-industry-carousel .item .solutions-made-for-card {
 
-  .trusted-marquee .item {
-    min-width: 160px; /* Slightly larger for tablets */
-    margin: 0 5px;
-  }
-
-  #try-hybrid.say-hello {
-    padding: 10px; /* Add padding for breathing room */
-  }
-
-  #try-hybrid .try-hybrid-list h5 {
-    font-size: 28px; /* Slightly larger font */
-  }
-
-  #try-hybrid .try-hybrid-list ul li::before {
-    width: 18px;
-    height: 18px;
-  }
-
-  #try-hybrid .try-hybrid-list ul li {
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-
-  .solutions-made-for-industry-carousel .owl-nav {
-    top: -20%; /* Adjust position to fit layout */
-  }
-}
-@media (min-width:1920px) {
-    .container{
-        max-width: 1650px;
+        padding: 15.6px;
     }
-    
+
+    .solutions-made-for-industry-carousel .item .solutions-made-for-card .card-title {
+        font-size: 20px;
+
+    }
+
+    .solutions-made-for-industry h2 {
+        font-size: 40px;
+        padding: 0 0 30px 0;
+    }
+
+    .yourcomp .cont-sec h1 {
+
+        font-size: 35px;
+
+    }
+
+    .yourcomp .btsec .cmnbtn-out {
+        margin-left: 5px;
+    }
+
+    .yourcomp .btsec {
+        display: flex;
+        font-size: 11px;
+    }
+
+    .yourcomp {
+        padding: 10px;
+        /* Adjust padding as needed */
+    }
+
+    .yourcomp .cont-sec {
+        padding-top: 20px;
+        /* Modify spacing for better layout on tablets */
+    }
+
+    .trusted-marquee .item {
+        min-width: 160px;
+        /* Slightly larger for tablets */
+        margin: 0 5px;
+    }
+
+    #try-hybrid.say-hello {
+        padding: 10px;
+        /* Add padding for breathing room */
+    }
+
+    #try-hybrid .try-hybrid-list h5 {
+
+        font-size: 28px;
+        /* Slightly larger font */
+    }
+
+    #try-hybrid .try-hybrid-list ul li::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .solutions-made-for-card-description ul li::before {
+
+        width: 18px;
+        height: 18px;
+    }
+
+    #try-hybrid .try-hybrid-list ul li {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .solutions-made-for-industry-carousel .owl-nav {
+        top: -20%;
+        /* Adjust position to fit layout */
+    }
 }
 
 @media (max-width: 767px) {
-  .container {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .solutions-made-for-industry-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
-    height: 30px;
-    width: 30px;
-    
-}
-.solutions-made-for-industry-carousel .owl-nav {
-    top: -20%;
-}
 
-  .yourcomp {
-    padding: 0;
-  }
+    .solutions-made-for-industry-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev {
+        height: 30px;
+        width: 30px;
 
-  .yourcomp .cont-sec {
-    padding-top: 0;
-  }
+    }
 
-  .trusted-marquee .item {
-    min-width: 140px;
-    margin: 0;
-  }
+    .solutions-made-for-industry-carousel .owl-nav {
+        top: -20%;
+    }
 
-  #try-hybrid.say-hello {
-    padding: 0;
-  }
+    .yourcomp {
+        padding: 0;
+    }
 
-  #try-hybrid .try-hybrid-list h5 {
-    font-size: 25px;
-  }
+    .yourcomp .cont-sec {
+        padding-top: 0;
+    }
 
-  #try-hybrid .try-hybrid-list ul li::before {
-    width: 16px;
-    height: 16px;
-  }
+    .trusted-marquee .item {
+        min-width: 140px;
+        margin: 0;
+    }
 
-  #try-hybrid .try-hybrid-list ul li {
-    margin-bottom: 10px;
-    font-size: 12px;
-  }
+    #try-hybrid.say-hello {
+        padding: 0;
+    }
 
-  .solutions-made-for-industry-carousel .owl-nav {
-    top: -30%;
-  }
+    #try-hybrid .try-hybrid-list h5 {
+        font-size: 25px;
+    }
+
+    #try-hybrid .try-hybrid-list ul li::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    #try-hybrid .try-hybrid-list ul li {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .solutions-made-for-industry-carousel .owl-nav {
+        top: -30%;
+    }
 }
