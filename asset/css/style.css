@@ -208,6 +208,11 @@
     background-color: #c6765b;
 }
 
+.solutions-made-for-card-description .cmnbtn{
+    display: flex;
+    gap: 12px;
+    width: fit-content;
+}
 
 .solutions-made-for-card:hover .solutions-made-for-card-description {
     display: block;
