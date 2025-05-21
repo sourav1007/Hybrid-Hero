@@ -292,7 +292,7 @@
 .owl-carousel .owl-nav .owl-prev {
     height: 50px;
     width: 50px;
-    border: 3px solid black !important;
+    border: 2px solid black !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,12 +346,16 @@ color: orange !important;
     width: 20px;
     height: 20px;
 }
+
 }
 
 
 /* Medium devices (up to 1024px) */
 @media (max-width: 1024px) {
-
+.trusted-marquee .item img {
+    
+    object-fit: contain;
+}
     .solutions-made-for-industry-carousel .item .solutions-made-for-card {
 
         padding: 15.6px;
@@ -430,6 +434,13 @@ color: orange !important;
 
 @media (max-width: 767px) {
 
+    .yourcomp .btsec {
+    
+    justify-content: center;
+}
+    .yourcomp .btsec .cmnbtn, .yourcomp .btsec .cmnbtn-out {
+    margin: 0;
+}
     .solutions-made-for-industry-carousel .owl-nav .owl-next,
     .owl-carousel .owl-nav .owl-prev {
         height: 30px;
@@ -475,4 +486,28 @@ color: orange !important;
     .solutions-made-for-industry-carousel .owl-nav {
         top: -30%;
     }
+    
+.yourcomp .row {
+    flex-direction: column;
+}
+}
+@media (max-width:576px) {
+    .solutions-made-for-industry-carousel .owl-nav {
+    top: -20%;
+
+}
+.yourcomp .cont-sec .simple-int {
+    margin-bottom: 13.75px;
+}
+.yourcomp .cont-sec h1 {
+    margin-bottom: 20.75px;
+    
+}
+.yourcomp .cont-sec p {
+    margin-bottom: 20.25px;
+}
+.yourcomp .cont-sec {
+    padding: 0px 0px 50px 0;
+}
+    
 }
