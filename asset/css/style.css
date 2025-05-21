@@ -324,7 +324,13 @@ color: orange !important;
     .container {
         max-width: 1160px;
     }
+   .yourcomp .btsec .cmnbtn {
+    font-size: 12px;
+}
 
+.yourcomp .btsec .cmnbtn-out {
+font-size: 12px;
+}
     .yourcomp .cont-sec h1 {
 
         font-size: 60px;
