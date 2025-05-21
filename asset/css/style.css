@@ -16,7 +16,9 @@
 #nav .container {
     max-width: 1650px;
 }
-
+.yourcomp{
+    padding: 95px 15px;
+}
 .yourcomp .cont-sec h1 {
     padding: 0;
     margin-bottom: 33.75px;
