@@ -129,6 +129,7 @@
 /* Duplicate the marquee items to create seamless loop */
 .trusted-marquee-wrapper .trusted-marquee .marquee-content {
     display: flex;
+    width: 100%;
 }
 
 /* solutions-made-for-industry-section */
@@ -439,6 +440,7 @@ font-size: 12px;
 }
 
 @media (max-width: 767px) {
+    
 
     .yourcomp .btsec {
     
@@ -501,6 +503,11 @@ font-size: 12px;
     .solutions-made-for-industry-carousel .owl-nav {
     top: -20%;
 
+}
+.solutions-made-for-industry-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+   
+    padding: 6px !important;
+   
 }
 .yourcomp .cont-sec .simple-int {
     margin-bottom: 13.75px;
