@@ -33,19 +33,34 @@
 .yourcomp .cont-sec p {
     margin-bottom: 56.25px;
 }
-.yourcomp .btsec{
+
+.yourcomp .btsec {
     display: flex;
     gap: 15px;
 }
 
-.yourcomp .btsec .cmnbtn-out{
+.yourcomp .btsec .cmnbtn-out {
     margin-left: 0;
 }
-.text-image-comp .cont-sec h1{
+
+.text-image-comp .cont-sec h1 {
     font-size: 60px;
     font-weight: 600;
 
 }
+
+#try-hybrid {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+
+
+#try-hybrid .try-hybrid-three h6 {
+    color: black;
+
+}
+
 #try-hybrid .try-hybrid-list h5 {
     color: #203864;
     font-size: 55px;
@@ -136,6 +151,7 @@
 
 .solutions-made-for-industry-section {
     padding: 60px 0px;
+    overflow-x: hidden;
 }
 
 .solutions-made-for-industry h2 {
@@ -209,7 +225,7 @@
     background-color: #c6765b;
 }
 
-.solutions-made-for-card-description .cmnbtn{
+.solutions-made-for-card-description .cmnbtn {
     display: flex;
     gap: 12px;
     width: fit-content;
@@ -302,10 +318,11 @@
     border-radius: 50px !important;
 
 }
+
 .solutions-made-for-industry-carousel .owl-nav .owl-next:hover,
-.owl-carousel .owl-nav .owl-prev:hover{
-border: 3px solid orange !important;
-color: orange !important;
+.owl-carousel .owl-nav .owl-prev:hover {
+    border: 3px solid orange !important;
+    color: orange !important;
 }
 
 /* desk-booking-section */
@@ -325,44 +342,51 @@ color: orange !important;
     .container {
         max-width: 1160px;
     }
-   .yourcomp .btsec .cmnbtn {
-    font-size: 12px;
-}
 
-.yourcomp .btsec .cmnbtn-out {
-font-size: 12px;
-}
+    .yourcomp .btsec .cmnbtn {
+        font-size: 12px;
+    }
+
+    .yourcomp .btsec .cmnbtn-out {
+        font-size: 12px;
+    }
+
     .yourcomp .cont-sec h1 {
 
         font-size: 60px;
 
     }
-    .text-image-comp .cont-sec h1{
-    font-size: 45px;
 
-}
+    .text-image-comp .cont-sec h1 {
+        font-size: 45px;
+
+    }
+
     #try-hybrid .try-hybrid-list h5 {
-    font-size: 45px;
-}
-#try-hybrid .try-hybrid-list ul li {
-    font-size: 15px;
-    
-}
-#try-hybrid .try-hybrid-list ul li::before {
-    
-    width: 20px;
-    height: 20px;
-}
+        font-size: 45px;
+    }
+
+    #try-hybrid .try-hybrid-list ul li {
+        font-size: 15px;
+
+    }
+
+    #try-hybrid .try-hybrid-list ul li::before {
+
+        width: 20px;
+        height: 20px;
+    }
 
 }
 
 
 /* Medium devices (up to 1024px) */
 @media (max-width: 1024px) {
-.trusted-marquee .item img {
-    
-    object-fit: contain;
-}
+    .trusted-marquee .item img {
+
+        object-fit: contain;
+    }
+
     .solutions-made-for-industry-carousel .item .solutions-made-for-card {
 
         padding: 15.6px;
@@ -384,7 +408,7 @@ font-size: 12px;
 
     }
 
-    
+
 
     .yourcomp .btsec {
         font-size: 11px;
@@ -440,15 +464,18 @@ font-size: 12px;
 }
 
 @media (max-width: 767px) {
-    
+
 
     .yourcomp .btsec {
-    
-    justify-content: center;
-}
-    .yourcomp .btsec .cmnbtn, .yourcomp .btsec .cmnbtn-out {
-    margin: 0;
-}
+
+        justify-content: center;
+    }
+
+    .yourcomp .btsec .cmnbtn,
+    .yourcomp .btsec .cmnbtn-out {
+        margin: 0;
+    }
+
     .solutions-made-for-industry-carousel .owl-nav .owl-next,
     .owl-carousel .owl-nav .owl-prev {
         height: 30px;
@@ -494,33 +521,43 @@ font-size: 12px;
     .solutions-made-for-industry-carousel .owl-nav {
         top: -30%;
     }
-    
-.yourcomp .row {
-    flex-direction: column;
+
+    .yourcomp .row {
+        flex-direction: column;
+    }
 }
-}
+
 @media (max-width:576px) {
     .solutions-made-for-industry-carousel .owl-nav {
-    top: -20%;
+        top: -20%;
 
+    }
+    #try-hybrid #try-hybrid-heading {
+    padding: 20px 0;
 }
-.solutions-made-for-industry-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
-   
-    padding: 6px !important;
-   
-}
-.yourcomp .cont-sec .simple-int {
-    margin-bottom: 13.75px;
-}
-.yourcomp .cont-sec h1 {
-    margin-bottom: 20.75px;
-    
-}
-.yourcomp .cont-sec p {
-    margin-bottom: 20.25px;
-}
-.yourcomp .cont-sec {
-    padding: 0px 0px 50px 0;
-}
-    
+
+    .solutions-made-for-industry-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev {
+
+        padding: 6px !important;
+
+    }
+
+    .yourcomp .cont-sec .simple-int {
+        margin-bottom: 13.75px;
+    }
+
+    .yourcomp .cont-sec h1 {
+        margin-bottom: 20.75px;
+
+    }
+
+    .yourcomp .cont-sec p {
+        margin-bottom: 20.25px;
+    }
+
+    .yourcomp .cont-sec {
+        padding: 0px 0px 50px 0;
+    }
+
 }
